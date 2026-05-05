@@ -1,7 +1,6 @@
 import { Box } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import * as mixpanel from 'client/shared/analytics/mixpanel';
 import useIsMobile from 'client/shared/hooks/useIsMobile';

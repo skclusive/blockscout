@@ -1,9 +1,8 @@
 import { Box, chakra, Flex } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ChainInfo } from 'types/api/interop';
-
-import { route } from 'nextjs-routes';
 
 import { Image } from 'toolkit/chakra/image';
 import { Tooltip } from 'toolkit/chakra/tooltip';

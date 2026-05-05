@@ -1,9 +1,8 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ArbitrumL2MessagesItem } from 'types/api/arbitrumL2';
-
-import { route } from 'nextjs-routes';
 
 import BlockEntityL1 from 'client/features/rollup/common/components/BlockEntityL1';
 import TxEntityL1 from 'client/features/rollup/common/components/TxEntityL1';

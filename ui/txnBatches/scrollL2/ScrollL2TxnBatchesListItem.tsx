@@ -1,8 +1,7 @@
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ScrollL2TxnBatch } from 'types/api/scrollL2';
-
-import { route } from 'nextjs-routes';
 
 import BatchEntityL2 from 'client/features/rollup/common/components/BatchEntityL2';
 import BlockEntityL1 from 'client/features/rollup/common/components/BlockEntityL1';

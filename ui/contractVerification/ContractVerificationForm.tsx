@@ -1,4 +1,5 @@
 import { Grid, Text, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import type { SubmitHandler } from 'react-hook-form';
 import { useForm, FormProvider } from 'react-hook-form';
@@ -7,8 +8,6 @@ import type { FormFields } from './types';
 import type { SocketMessage } from 'client/api/socket/types';
 import type { SmartContract, SmartContractVerificationMethodApi } from 'types/api/contract';
 import type { SmartContractVerificationConfig } from 'types/client/contract';
-
-import { route } from 'nextjs-routes';
 
 import useApiFetch from 'client/api/hooks/useApiFetch';
 import useSocketChannel from 'client/api/socket/useSocketChannel';

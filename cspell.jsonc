@@ -5,6 +5,7 @@
     "language": "en,en-GB",
     "useGitignore": true,
     "ignorePaths": [
+        "./.script",
         "**/*.svg",
         "**/*.sfd",
         ".git",

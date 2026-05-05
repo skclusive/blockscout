@@ -1,9 +1,8 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { NavItem } from 'types/client/navigation';
-
-import { route } from 'nextjs-routes';
 
 import { isInternalItem } from 'lib/hooks/useNavItems';
 import { Link } from 'toolkit/chakra/link';

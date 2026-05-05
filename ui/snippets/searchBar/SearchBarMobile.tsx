@@ -1,10 +1,10 @@
 import { Box } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import type { FormEvent } from 'react';
 import React from 'react';
 
 import type { Route } from 'nextjs-routes';
-import { route } from 'nextjs-routes';
 
 import * as mixpanel from 'client/shared/analytics/mixpanel';
 import { getRecentSearchKeywords, saveToRecentKeywords } from 'lib/recentSearchKeywords';

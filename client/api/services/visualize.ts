@@ -1,9 +1,11 @@
 import type { ApiResource } from '../types';
 import type * as visualizer from '@blockscout/visualizer-types';
 
+import config from 'configs/app';
+
 export const VISUALIZE_API_RESOURCES = {
   solidity_contract: {
-    path: '/api/v1/solidity\\:visualize-contracts',
+    path: `${ config.apis.general?.basePath ?? '' }/api/v1/solidity\\:visualize-contracts`,
   },
 } satisfies Record<string, ApiResource>;
 

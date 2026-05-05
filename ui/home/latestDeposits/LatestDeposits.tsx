@@ -4,9 +4,8 @@ import {
   Grid,
   GridItem,
 } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import BlockEntityL1 from 'client/features/rollup/common/components/BlockEntityL1';
 import TxEntityL1 from 'client/features/rollup/common/components/TxEntityL1';

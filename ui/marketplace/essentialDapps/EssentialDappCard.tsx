@@ -1,6 +1,5 @@
 import { Text } from '@chakra-ui/react';
-
-import { route } from 'nextjs-routes';
+import { route } from 'overrides/nextjs-routes';
 
 import { Button } from 'toolkit/chakra/button';
 import { useColorModeValue } from 'toolkit/chakra/color-mode';

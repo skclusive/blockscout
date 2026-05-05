@@ -1,11 +1,10 @@
 import { Flex } from '@chakra-ui/react';
 import BigNumber from 'bignumber.js';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { Block } from 'client/slices/block/types/api';
 import type { ClusterChainConfig } from 'types/multichain';
-
-import { route } from 'nextjs-routes';
 
 import BlockGasUsed from 'client/slices/block/components/BlockGasUsed';
 import BlockPendingUpdateHint from 'client/slices/block/components/BlockPendingUpdateHint';

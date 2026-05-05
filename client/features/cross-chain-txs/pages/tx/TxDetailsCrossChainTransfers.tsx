@@ -1,6 +1,5 @@
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import useTxCrossChainTransfersQuery from 'client/features/cross-chain-txs/hooks/useTxCrossChainTransfersQuery';
 import config from 'configs/app';

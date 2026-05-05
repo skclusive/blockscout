@@ -1,9 +1,8 @@
 import { chakra, Flex, GridItem } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { InterchainTransfer } from '@blockscout/interchain-indexer-types';
-
-import { route } from 'nextjs-routes';
 
 import { Link } from 'toolkit/chakra/link';
 import { Skeleton } from 'toolkit/chakra/skeleton';

@@ -1,6 +1,7 @@
 import type { BoxProps } from '@chakra-ui/react';
 import { Box, chakra } from '@chakra-ui/react';
 import BigNumber from 'bignumber.js';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { AddressParam } from 'types/api/addressParams';
@@ -10,8 +11,6 @@ import type {
   TxInterpretationVariableString,
 } from 'types/api/txInterpretation';
 import type { ClusterChainConfig } from 'types/multichain';
-
-import { route } from 'nextjs-routes';
 
 import * as mixpanel from 'client/shared/analytics/mixpanel';
 import { currencyUnits } from 'client/shared/chain/units';

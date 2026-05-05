@@ -32,7 +32,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en">
+      <Html lang="en" className="dark">
         <Head>
           { /* FONTS */ }
           <link
@@ -45,17 +45,17 @@ class MyDocument extends Document {
           />
 
           { /* eslint-disable-next-line @next/next/no-sync-scripts */ }
-          <script src="/assets/envs.js"/>
+          <script src={ `${ config.apis.general?.basePath ?? '' }/assets/envs.js` }/>
           { config.features.multichain.isEnabled && (
             <>
               { /* eslint-disable-next-line @next/next/no-sync-scripts */ }
-              <script src="/assets/multichain/config.js"/>
+              <script src={ `${ config.apis.general?.basePath ?? '' }/assets/multichain/config.js` }/>
             </>
           ) }
           { marketplaceFeature.isEnabled && marketplaceFeature.essentialDapps && (
             <>
               { /* eslint-disable-next-line @next/next/no-sync-scripts */ }
-              <script src="/assets/essential-dapps/chains.js"/>
+              <script src={ `${ config.apis.general?.basePath ?? '' }/assets/essential-dapps/chains.js` }/>
             </>
           ) }
 

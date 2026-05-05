@@ -1,7 +1,6 @@
 import { Box, Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import getErrorCause from 'client/shared/errors/get-error-cause';
 import getErrorCauseStatusCode from 'client/shared/errors/get-error-cause-status-code';

@@ -1,9 +1,8 @@
 import { Box, Flex, VStack } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { Block } from 'client/slices/block/types/api';
-
-import { route } from 'nextjs-routes';
 
 import { publicClient } from 'client/features/connect-wallet/utils/public-client';
 import useInitialList from 'client/shared/lists/useInitialList';

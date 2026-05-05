@@ -1,9 +1,8 @@
 import { Box, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ChainInfo } from 'types/api/interop';
-
-import { route } from 'nextjs-routes';
 
 import * as TxEntity from 'client/slices/tx/components/entity/TxEntity';
 import { Image } from 'toolkit/chakra/image';

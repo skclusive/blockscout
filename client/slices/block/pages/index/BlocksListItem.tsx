@@ -1,12 +1,11 @@
 import { Flex, Text, Box } from '@chakra-ui/react';
 import BigNumber from 'bignumber.js';
 import { capitalize } from 'es-toolkit';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { Block } from 'client/slices/block/types/api';
 import type { ClusterChainConfig } from 'types/multichain';
-
-import { route } from 'nextjs-routes';
 
 import getChainValidatorTitle from 'client/shared/chain/get-chain-validator-title';
 import { currencyUnits } from 'client/shared/chain/units';

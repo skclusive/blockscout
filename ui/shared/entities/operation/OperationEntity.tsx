@@ -1,9 +1,8 @@
 import { Spinner, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import * as tac from '@blockscout/tac-operation-lifecycle-types';
-
-import { route } from 'nextjs-routes';
 
 import * as EntityBase from 'ui/shared/entities/base/components';
 

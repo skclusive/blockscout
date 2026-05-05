@@ -1,11 +1,10 @@
 import { GridItem } from '@chakra-ui/react';
 import type { UseQueryResult } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ArbitrumL2TxnBatch } from 'types/api/arbitrumL2';
-
-import { route } from 'nextjs-routes';
 
 import type { ResourceError } from 'client/api/resources';
 import BlockEntityL1 from 'client/features/rollup/common/components/BlockEntityL1';

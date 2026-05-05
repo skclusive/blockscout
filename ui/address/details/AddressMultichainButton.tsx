@@ -1,9 +1,8 @@
 import { upperFirst } from 'es-toolkit';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { MultichainProviderConfigParsed } from 'types/client/multichainProviderConfig';
-
-import { route } from 'nextjs-routes';
 
 import { Image } from 'toolkit/chakra/image';
 import { Link } from 'toolkit/chakra/link';

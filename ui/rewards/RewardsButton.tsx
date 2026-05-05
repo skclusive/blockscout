@@ -1,7 +1,6 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React, { useCallback } from 'react';
-
-import { route } from 'nextjs-routes';
 
 import useIsMobile from 'client/shared/hooks/useIsMobile';
 import { useRewardsContext } from 'lib/contexts/rewards';

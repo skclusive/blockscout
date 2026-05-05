@@ -1,10 +1,9 @@
 import { Flex, Text } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { MarketplaceApp } from 'types/client/marketplace';
-
-import { route } from 'nextjs-routes';
 
 import highlightText from 'client/shared/text/highlight-text';
 import { useColorModeValue } from 'toolkit/chakra/color-mode';

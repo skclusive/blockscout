@@ -1,8 +1,7 @@
 import { Box, Flex } from '@chakra-ui/react';
 import { clamp } from 'es-toolkit';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import { publicClient } from 'client/features/connect-wallet/utils/public-client';
 import { TX } from 'client/slices/tx/stubs/tx';

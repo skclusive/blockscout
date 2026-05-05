@@ -1,7 +1,6 @@
 import { chakra, createListCollection, Flex } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import { Select } from 'toolkit/chakra/select';
 import { Skeleton } from 'toolkit/chakra/skeleton';

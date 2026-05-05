@@ -1,10 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { TabItemRegular } from 'toolkit/components/AdaptiveTabs/types';
-
-import { route } from 'nextjs-routes';
 
 import useApiQuery from 'client/api/hooks/useApiQuery';
 import throwOnResourceLoadError from 'client/shared/errors/throw-on-resource-load-error';

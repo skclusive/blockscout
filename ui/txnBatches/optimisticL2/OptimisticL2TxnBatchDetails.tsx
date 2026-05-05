@@ -1,10 +1,9 @@
 import type { UseQueryResult } from '@tanstack/react-query';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { OptimismL2TxnBatch } from 'types/api/optimisticL2';
-
-import { route } from 'nextjs-routes';
 
 import type { ResourceError } from 'client/api/resources';
 import throwOnResourceLoadError from 'client/shared/errors/throw-on-resource-load-error';

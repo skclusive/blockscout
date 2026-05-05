@@ -1,7 +1,6 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import useApiQuery from 'client/api/hooks/useApiQuery';
 import useIsMobile from 'client/shared/hooks/useIsMobile';

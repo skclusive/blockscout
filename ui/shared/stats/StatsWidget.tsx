@@ -1,8 +1,8 @@
 import { Box, Flex, Text, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { Route } from 'nextjs-routes';
-import { route } from 'nextjs-routes';
 
 import { Link } from 'toolkit/chakra/link';
 import { Skeleton } from 'toolkit/chakra/skeleton';

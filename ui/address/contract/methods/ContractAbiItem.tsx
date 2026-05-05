@@ -1,10 +1,9 @@
 import { Box } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import { Element } from 'react-scroll';
 
 import type { FormSubmitHandler, SmartContractMethod } from './types';
-
-import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
 import { AccordionItem, AccordionItemContent, AccordionItemTrigger } from 'toolkit/chakra/accordion';

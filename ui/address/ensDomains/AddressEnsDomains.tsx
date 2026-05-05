@@ -1,11 +1,10 @@
 import { Box, Flex, Grid, chakra } from '@chakra-ui/react';
 import type { UseQueryResult } from '@tanstack/react-query';
 import { clamp } from 'es-toolkit';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type * as bens from '@blockscout/bens-types';
-
-import { route } from 'nextjs-routes';
 
 import type { ResourceError } from 'client/api/resources';
 import dayjs from 'lib/date/dayjs';

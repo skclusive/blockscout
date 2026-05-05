@@ -1,9 +1,8 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React, { useCallback } from 'react';
 
 import type { MarketplaceApp } from 'types/client/marketplace';
-
-import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
 import { Badge } from 'toolkit/chakra/badge';

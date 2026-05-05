@@ -1,9 +1,8 @@
 import { Flex, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { Pool } from 'types/api/pools';
-
-import { route } from 'nextjs-routes';
 
 import { getPoolTitle } from 'lib/pools/getPoolTitle';
 import { Skeleton } from 'toolkit/chakra/skeleton';

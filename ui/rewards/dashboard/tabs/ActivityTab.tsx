@@ -1,9 +1,8 @@
 import { Flex, Text, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import { useCallback, useMemo, useState } from 'react';
 
 import { getFeaturePayload } from 'configs/app/features/types';
-
-import { route } from 'nextjs-routes';
 
 import useApiQuery from 'client/api/hooks/useApiQuery';
 import useIsMobile from 'client/shared/hooks/useIsMobile';

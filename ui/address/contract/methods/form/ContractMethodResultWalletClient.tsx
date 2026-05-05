@@ -1,11 +1,10 @@
 import { chakra, Spinner, Box } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import type { UseWaitForTransactionReceiptReturnType } from 'wagmi';
 import { useWaitForTransactionReceipt } from 'wagmi';
 
 import type { FormSubmitResultWalletClient } from '../types';
-
-import { route } from 'nextjs-routes';
 
 import { Alert } from 'toolkit/chakra/alert';
 import { Link } from 'toolkit/chakra/link';

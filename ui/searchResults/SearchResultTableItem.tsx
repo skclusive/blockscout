@@ -1,11 +1,10 @@
 import { chakra, Text, Flex, Box } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import xss from 'xss';
 
 import type { SearchResultItem } from 'types/client/search';
 import type { AddressFormat } from 'types/views/address';
-
-import { route } from 'nextjs-routes';
 
 import * as mixpanel from 'client/shared/analytics/mixpanel';
 import highlightText from 'client/shared/text/highlight-text';

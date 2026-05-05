@@ -19,7 +19,7 @@ const LayoutApp = ({ children }: Props) => {
         display="flex"
         flexDirection="column"
       >
-        <Layout.TopRow/>
+        { /* <Layout.TopRow/> */ }
         <HeaderMobile/>
         <Layout.MainArea
           minH={{

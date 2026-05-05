@@ -1,10 +1,9 @@
 import { Box, Separator, Flex, VStack } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { NavLink } from './types';
 import type { UserInfo } from 'types/api/account';
-
-import { route } from 'nextjs-routes';
 
 import shortenString from 'client/shared/text/shorten-string';
 import config from 'configs/app';

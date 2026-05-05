@@ -1,7 +1,6 @@
 import { Box, Flex, chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import useApiQuery from 'client/api/hooks/useApiQuery';
 import ChartWidgetContainer from 'client/features/chain-stats/components/ChartWidgetContainer';

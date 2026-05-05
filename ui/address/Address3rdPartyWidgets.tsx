@@ -1,10 +1,9 @@
 import { Grid, Flex } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import { useMemo } from 'react';
 
 import type { Address3rdPartyWidget } from 'types/views/address';
-
-import { route } from 'nextjs-routes';
 
 import useIsMounted from 'client/shared/hooks/useIsMounted';
 import getQueryParamString from 'client/shared/router/get-query-param-string';

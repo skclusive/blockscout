@@ -14,7 +14,7 @@ const LayoutDefault = ({ children }: Props) => {
   return (
     <Layout.Root content={ children }>
       <Layout.Container>
-        <Layout.TopRow/>
+        { /* <Layout.TopRow/> */ }
         <Layout.NavBar/>
         <HeaderMobile/>
         <Layout.MainArea>
@@ -29,7 +29,7 @@ const LayoutDefault = ({ children }: Props) => {
             </AppErrorBoundary>
           </Layout.MainColumn>
         </Layout.MainArea>
-        <Layout.Footer/>
+        { /* <Layout.Footer/> */ }
       </Layout.Container>
     </Layout.Root>
   );

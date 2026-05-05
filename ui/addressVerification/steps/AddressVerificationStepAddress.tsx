@@ -1,4 +1,5 @@
 import { Box, Flex } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import type { SubmitHandler } from 'react-hook-form';
 import { FormProvider, useForm } from 'react-hook-form';
@@ -10,8 +11,6 @@ import type {
   AddressVerificationFormFirstStepFields,
   RootFields,
 } from '../types';
-
-import { route } from 'nextjs-routes';
 
 import useApiFetch from 'client/api/hooks/useApiFetch';
 import type { ResourceError } from 'client/api/resources';

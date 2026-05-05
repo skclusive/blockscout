@@ -1,7 +1,6 @@
 import { chakra, Box } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import { Link } from 'toolkit/chakra/link';
 

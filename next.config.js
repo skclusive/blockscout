@@ -12,6 +12,7 @@ const rewrites = require('./nextjs/rewrites');
 
 /** @type {import('next').NextConfig} */
 const moduleExports = {
+  basePath: `${process.env.NEXT_PUBLIC_API_BASE_PATH}`,
   transpilePackages: [
     'react-syntax-highlighter',
   ],

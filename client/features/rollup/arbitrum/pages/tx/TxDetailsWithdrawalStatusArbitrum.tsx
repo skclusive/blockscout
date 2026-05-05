@@ -1,10 +1,9 @@
 import { Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { ArbitrumTransactionMessageStatus } from 'client/features/rollup/arbitrum/types/api';
 import type { Transaction } from 'client/slices/tx/types/api';
-
-import { route } from 'nextjs-routes';
 
 import TxEntityL1 from 'client/features/rollup/common/components/TxEntityL1';
 import { layerLabels } from 'lib/rollups/utils';

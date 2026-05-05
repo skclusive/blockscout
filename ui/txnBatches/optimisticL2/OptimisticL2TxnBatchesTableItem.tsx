@@ -1,8 +1,7 @@
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { OptimisticL2TxnBatchesItem } from 'types/api/optimisticL2';
-
-import { route } from 'nextjs-routes';
 
 import BatchEntityL2 from 'client/features/rollup/common/components/BatchEntityL2';
 import config from 'configs/app';

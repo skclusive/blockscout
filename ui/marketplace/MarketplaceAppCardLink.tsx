@@ -1,8 +1,7 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import type { MouseEvent } from 'react';
-
-import { route } from 'nextjs-routes';
 
 import { LinkOverlay } from 'toolkit/chakra/link';
 

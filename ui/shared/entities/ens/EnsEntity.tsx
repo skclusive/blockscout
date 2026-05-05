@@ -1,9 +1,8 @@
 import { chakra, Flex, Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type * as bens from '@blockscout/bens-types';
-
-import { route } from 'nextjs-routes';
 
 import { Image } from 'toolkit/chakra/image';
 import { Link as LinkToolkit } from 'toolkit/chakra/link';

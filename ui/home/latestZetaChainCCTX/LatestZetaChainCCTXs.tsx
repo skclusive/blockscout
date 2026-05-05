@@ -1,12 +1,11 @@
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { useQueryClient } from '@tanstack/react-query';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import { Direction } from '@blockscout/zetachain-cctx-types';
 import type { ListCctxsResponse } from '@blockscout/zetachain-cctx-types';
 import type { SocketMessage } from 'client/api/socket/types';
-
-import { route } from 'nextjs-routes';
 
 import useApiQuery, { getResourceKey } from 'client/api/hooks/useApiQuery';
 import useSocketChannel from 'client/api/socket/useSocketChannel';

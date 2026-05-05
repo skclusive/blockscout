@@ -1,8 +1,7 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 import type { AbiParameter } from 'viem';
-
-import { route } from 'nextjs-routes';
 
 import { Link } from 'toolkit/chakra/link';
 import CopyToClipboard from 'ui/shared/CopyToClipboard';

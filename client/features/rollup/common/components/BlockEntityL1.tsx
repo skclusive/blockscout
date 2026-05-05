@@ -1,7 +1,6 @@
 import { chakra } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import * as BlockEntity from 'client/slices/block/components/entity/BlockEntity';
 import config from 'configs/app';

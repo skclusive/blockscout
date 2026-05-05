@@ -1,8 +1,7 @@
 import { Box, Flex, chakra } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
-
-import { route } from 'nextjs-routes';
 
 import * as mixpanel from 'client/shared/analytics/mixpanel';
 import config from 'configs/app';

@@ -1,10 +1,10 @@
 import type { UseQueryResult } from '@tanstack/react-query';
 import { useQuery } from '@tanstack/react-query';
+import { route } from 'overrides/nextjs-routes';
 
 import type { TokenInstance } from 'types/api/token';
 
 import type { DynamicRoute } from 'nextjs-routes';
-import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
 

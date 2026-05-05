@@ -18,7 +18,7 @@ RUN pnpm install --frozen-lockfile
 # ****** STAGE 2: Build *******
 # *****************************
 FROM node:22.14.0-alpine AS builder
-RUN apk add --no-cache --upgrade libc6-compat bash jq
+RUN apk add --no-cache --upgrade libc6-compat bash jq dos2unix
 RUN corepack enable && corepack prepare pnpm@10.32.1 --activate
 
 # pass build args to env variables
@@ -29,6 +29,10 @@ ENV NEXT_PUBLIC_GIT_TAG=$GIT_TAG
 ARG NEXT_OPEN_TELEMETRY_ENABLED
 ENV NEXT_OPEN_TELEMETRY_ENABLED=$NEXT_OPEN_TELEMETRY_ENABLED
 
+ARG API_BASE_PATH
+RUN echo "API_BASE_PATH $API_BASE_PATH"
+ENV NEXT_PUBLIC_API_BASE_PATH=$API_BASE_PATH
+
 ENV NODE_ENV production
 
 ### APP
@@ -36,6 +40,8 @@ ENV NODE_ENV production
 WORKDIR /app
 COPY --from=deps /app ./
 
+RUN dos2unix deploy/scripts/build_sprite.sh && \
+    dos2unix deploy/scripts/collect_envs.sh
 # Build SVG sprite and generate .env.registry with ENVs list and save build args into .env file
 RUN set -a && \
     source ./deploy/scripts/build_sprite.sh && \
@@ -83,7 +89,7 @@ RUN cd ./deploy/tools/llms-txt-generator && pnpm run build
 # *****************************
 # Production image, copy all the files and run next
 FROM node:22.14.0-alpine AS runner
-RUN apk add --no-cache --upgrade bash curl jq unzip
+RUN apk add --no-cache --upgrade bash curl jq unzip dos2unix
 
 ### APP
 WORKDIR /app
@@ -141,6 +147,19 @@ COPY ./configs/envs ./configs/envs
 # https://nextjs.org/docs/advanced-features/output-file-tracing
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+RUN dos2unix entrypoint.sh \
+    && dos2unix validate_envs.sh \
+    && dos2unix make_envs_script.sh \
+    && dos2unix download_assets.sh \
+    && dos2unix favicon_generator.sh \
+    && dos2unix sitemap_generator.sh \
+    && chmod +x entrypoint.sh \
+    && chmod +x validate_envs.sh \
+    && chmod +x make_envs_script.sh \
+    && chmod +x download_assets.sh \
+    && chmod +x favicon_generator.sh \
+    && chmod +x sitemap_generator.sh
 
 ENTRYPOINT ["./entrypoint.sh"]
 

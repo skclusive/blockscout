@@ -1,8 +1,7 @@
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type * as bens from '@blockscout/bens-types';
-
-import { route } from 'nextjs-routes';
 
 import TxEntity from 'client/slices/tx/components/entity/TxEntity';
 import config from 'configs/app';

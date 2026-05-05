@@ -12,7 +12,7 @@ const LayoutHome = ({ children }: Props) => {
   return (
     <Layout.Root content={ children }>
       <Layout.Container>
-        <Layout.TopRow/>
+        { /* <Layout.TopRow/> */ }
         <Layout.NavBar/>
         <HeaderMobile hideSearchButton/>
         <Layout.MainArea>
@@ -26,7 +26,7 @@ const LayoutHome = ({ children }: Props) => {
             </AppErrorBoundary>
           </Layout.MainColumn>
         </Layout.MainArea>
-        <Layout.Footer/>
+        { /* <Layout.Footer/> */ }
       </Layout.Container>
     </Layout.Root>
   );

@@ -3,12 +3,11 @@ import {
   Flex,
   Grid,
 } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { HomeStats } from 'types/api/stats';
 import type { ExcludeUndefined } from 'types/utils';
-
-import { route } from 'nextjs-routes';
 
 import config from 'configs/app';
 import { Link } from 'toolkit/chakra/link';

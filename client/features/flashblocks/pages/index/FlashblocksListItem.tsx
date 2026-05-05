@@ -1,9 +1,8 @@
 import { Flex, Text } from '@chakra-ui/react';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { FlashblockItem } from 'types/client/flashblocks';
-
-import { route } from 'nextjs-routes';
 
 import { Link } from 'toolkit/chakra/link';
 import FlashblockEntity from 'ui/shared/entities/flashblock/FlashblockEntity';

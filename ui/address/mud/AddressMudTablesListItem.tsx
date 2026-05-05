@@ -1,10 +1,9 @@
 import { Text, Flex, VStack, chakra, Box, Grid, GridItem, Separator } from '@chakra-ui/react';
 import { useRouter } from 'next/router';
+import { route } from 'overrides/nextjs-routes';
 import React from 'react';
 
 import type { AddressMudTableItem } from 'types/api/address';
-
-import { route } from 'nextjs-routes';
 
 import { Badge } from 'toolkit/chakra/badge';
 import { Link } from 'toolkit/chakra/link';

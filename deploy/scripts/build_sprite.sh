@@ -3,7 +3,7 @@
 icons_dir="./icons"
 target_dir="./public/icons"
 
-pnpm icons build -i $icons_dir -o $target_dir --optimize
+pnpm icons build -i $icons_dir -o $target_dir --optimize --yes
 
 create_registry_file() {
     # Create a temporary file to store the registry
